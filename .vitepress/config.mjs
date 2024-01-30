@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'web安全', link: '/markdown-examples' },
+      { text: 'web安全',items:[ {text: "csrf",link:"/docs/csrf.md"},{text:"markdown示例",link: '/docs/markdown-examples.md'}] },
       { text: '威胁情报', link: '/'},
       { text: '软件逆向', link: '/'}
     ],
