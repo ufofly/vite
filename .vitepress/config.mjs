@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [["link", { rel: "icon", href: "logo.png" }]],
+  head: [["link", { rel: "icon", href: "/vite/logo.png" }]],
   base: "/vite/",
   title: "web安全文档",
   description: "web安全学习笔记",
@@ -28,7 +28,7 @@ export default defineConfig({
     footer: {
       copyright: "Copyright@ 2024 Flyme"
     },
-    logo:"logo.png",
+    logo:"/logo.png",
     search: {
       provider: "local",
       options: {
