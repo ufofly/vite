@@ -7,7 +7,7 @@ hero:
   text: "学习笔记"
   tagline: stay hungry,stay foolish
   image:
-    src: /程序员.png
+    src: /public/程序员.png
     alt: "程序员"
   actions:
     - theme: brand

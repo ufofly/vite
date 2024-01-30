@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/vitepress/",
   head: [["link", { rel: "icon", href: "/vite/logo.png" }]],
-  base: "/vite/",
   title: "web安全文档",
   description: "web安全学习笔记",
   themeConfig: {
