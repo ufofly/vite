@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"	// 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,14 +11,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'web安全',items:[ {text: "csrf",link:"/docs/csrf.md"},{text:"markdown示例",link: '/docs/markdown-examples.md'}] },
-      { text: '威胁情报', link: '/'},
-      { text: '软件逆向', link: '/'}
+      { text: 'web安全',link:'/docs/csrf' },
+      { text: '威胁情报', link: '/docs/威胁情报/api-examples'},
+      { text: '软件逆向', link: '/docs/软件逆向/markdown-examples'}
     ],
-
-
-    sidebar: false,
-    aside: "left",
+    outline: 'deep',
+    sidebar: { "/docs/": set_sidebar("docs") },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ufofly' },
@@ -26,7 +25,7 @@ export default defineConfig({
     }
     ],
     footer: {
-      copyright: "Copyright@ 2024 Flyme"
+      copyright: "Copyright © 2024 Flyme"
     },
     logo:"/logo.png",
     search: {

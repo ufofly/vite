@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Markdown Examples
-      link: /markdown-examples
+      link: /docs/软件逆向/markdown-examples
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /docs/威胁情报/api-examples
 
 features:
   - title: 💡 小建议
