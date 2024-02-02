@@ -11,13 +11,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: 'web安全',link:'/docs/csrf' },
+      { text: 'web安全',link:'/docs/web安全/csrf' },
       { text: '威胁情报', link: '/docs/威胁情报/api-examples'},
       { text: '软件逆向', link: '/docs/软件逆向/markdown-examples'}
     ],
     outline: 'deep',
     sidebar: { "/docs/": set_sidebar("docs") },
-
+    docFooter: {
+      prev: false,
+      next: false,
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ufofly' }
      ],
